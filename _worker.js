@@ -1522,9 +1522,6 @@ kbd {
 .footer {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	gap: 10px 16px;
 	margin-top: 26px;
 	padding: 0 2px;
 	font-size: 11.5px;
@@ -1536,7 +1533,7 @@ kbd {
 	align-items: center;
 	gap: 8px;
 	min-width: 0;
-	max-width: 72%;
+	max-width: 100%;
 }
 
 .footer-label {
@@ -1553,19 +1550,6 @@ kbd {
 	text-overflow: ellipsis;
 }
 
-.footer-right {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-}
-
-.footer a {
-	color: var(--muted);
-	text-decoration: none;
-	transition: color .15s ease;
-}
-
-.footer a:hover { color: var(--accent); }
 
 .toast {
 	position: fixed;
@@ -1628,7 +1612,6 @@ kbd {
 	.qr-panel { flex-direction: column; align-items: flex-start; }
 	.save-cluster { width: 100%; justify-content: space-between; }
 	.side { grid-template-columns: 1fr; }
-	.footer-left { max-width: 100%; }
 	.content-grid { margin-top: 12px; }
 }
 
@@ -1790,11 +1773,6 @@ kbd {
 
 	<footer class="footer">
 		<div class="footer-left"><span class="footer-label">UA</span><span class="ua">${uaSafe}</span></div>
-		<div class="footer-right">
-			<a href="https://github.com/cmliu/CF-Workers-SUB" target="_blank" rel="noopener noreferrer">CF-Workers-SUB</a>
-			<span class="meta-divider" aria-hidden="true"></span>
-			<a href="https://t.me/CMLiussss" target="_blank" rel="noopener noreferrer">Telegram</a>
-		</div>
 	</footer>
 </div>
 

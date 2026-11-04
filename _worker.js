@@ -585,7 +585,6 @@ async function KV(request, env, txt = 'ADD.txt', guest) {
 
 		const titleSafe = escapeHTML(FileName);
 		const guestSafe = escapeHTML(guest);
-		const uaSafe = escapeHTML(request.headers.get('User-Agent') || 'Unknown');
 		const subApiSafe = escapeHTML(`${subProtocol}://${subConverter}`);
 		const subConfigSafe = escapeHTML(subConfig);
 		const backendHost = escapeHTML(subConverter.split('/')[0]);
@@ -1519,37 +1518,6 @@ kbd {
 	color: var(--faint);
 }
 
-.footer {
-	display: flex;
-	align-items: center;
-	margin-top: 26px;
-	padding: 0 2px;
-	font-size: 11.5px;
-	color: var(--faint);
-}
-
-.footer-left {
-	display: flex;
-	align-items: center;
-	gap: 8px;
-	min-width: 0;
-	max-width: 100%;
-}
-
-.footer-label {
-	font-size: 10px;
-	font-weight: 600;
-	letter-spacing: .08em;
-	color: var(--faint);
-}
-
-.ua {
-	font-family: var(--mono);
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-
 
 .toast {
 	position: fixed;
@@ -1771,9 +1739,6 @@ kbd {
 		</div>
 	</main>
 
-	<footer class="footer">
-		<div class="footer-left"><span class="footer-label">UA</span><span class="ua">${uaSafe}</span></div>
-	</footer>
 </div>
 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>

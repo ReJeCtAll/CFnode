@@ -131,7 +131,7 @@ https://example.com/sub
 | `TOKEN` | 推荐 | `auto` | 管理入口与私有订阅路径，例如 `/auto` |
 | `GUEST` | 否 | 基于 `TOKEN` 自动生成 | 访客订阅 token；别名 `GUESTTOKEN` |
 | `SUBNAME` | 否 | `CF-Workers-SUB` | 订阅名称与页面标题 |
-| `SUBAPI` | 否 | `https://sub2.waf.im/subapi` | 订阅转换后端，可带协议；不带时默认 HTTPS |
+| `SUBAPI` | 否 | `https://sub2.xxx.im/subapi` | 订阅转换后端，可带协议；不带时默认 HTTPS |
 | `SUBCONFIG` | 否 | [ACL4SSR_Online_Full_MultiMode.ini](https://raw.githubusercontent.com/ReJeCtAll/clashrules/main/ACL4SSR_Online_Full_MultiMode.ini) | 分流配置 URL |
 | `SUBUPTIME` | 否 | `6` | 客户端更新间隔（小时），写入 `Profile-Update-Interval` |
 | `LINK` | 否 | `_worker.js` 中的 `MainData` | 未绑定 KV 时的节点/订阅列表，换行分隔 |
